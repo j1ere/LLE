@@ -23,3 +23,25 @@ LLE is important in dimensionality reduction because:
 ```bash
 xi​≈∑j∈N(i)​wij​xj
 ```
+```bash
+ϵ(W)=∑i​∥
+∥​xi​−∑j∈N(i)​wij​xj​∥
+∥​2
+```
+```bash
+    Φ(Y)=∑i​∥
+    ∥​yi​−∑j∈N(i)​wij​yj​∥
+    ∥​2
+
+```bash 
+Center: ∑iyi=0∑i​yi​=0
+```
+```bash
+Scale: 1N∑iyiyiT=IN1​∑i​yi​yiT​=I
+```
+```bash
+Solve the eigenvalue problem: MY=λY,M=(I−W)⊤(I−W)MY=λY,M=(I−W)⊤(I−W)
+```
+```bash
+Select the bottom d+1d+1 eigenvectors, discard the smallest eigenvector corresponding to eigenvalue 0.
+```
